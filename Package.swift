@@ -12,10 +12,10 @@ let package = Package(
         .package(url: "https://github.com/vapor/core.git", from: "3.0.0"),
 
         // Swift ORM framework (queries, models, and relations) for building NoSQL and SQL database integrations.
-        .package(url: "https://github.com/mixio/fluent.git", branch: "table-aliases-and-resultset-occurrences"),
+        .package(url: "https://github.com/mixio/fluent.git", .branch("table-aliases-and-resultset-occurrences")),
 
         // 🐘 Non-blocking, event-driven Swift client for PostgreSQL.
-        .package(url: "https://github.com/mixio/postgresql.git", from: "table-aliases-and-resultset-occurrences"),
+        .package(url: "https://github.com/mixio/postgresql.git", .branch("table-aliases-and-resultset-occurrences")),
     ],
     targets: [
         .target(name: "FluentPostgreSQL", dependencies: ["Async", "FluentSQL", "PostgreSQL"]),
