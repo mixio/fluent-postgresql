@@ -10,15 +10,15 @@ let package = Package(
     dependencies: [
         // 🌎 Utility package containing tools for byte manipulation, Codable, OS APIs, and debugging.
         .package(url: "https://github.com/vapor/core.git", from: "3.0.0"),
-//      .package(url: "https://github.com/mixio/core.git", .branch("mixio-dev")),
+//      .package(url: "https://github.com/mixio/core.git", .branch("mixio-dev-v0.0.1")),
 
         // Swift ORM framework (queries, models, and relations) for building NoSQL and SQL database integrations.
 //      .package(url: "https://github.com/vapor/fluent.git", from: "3.0.0"),
-        .package(url: "https://github.com/mixio/fluent.git", .branch("mixio-dev")),
+        .package(url: "https://github.com/mixio/fluent.git", .branch("mixio-dev-v0.0.1")),
 
         // 🐘 Non-blocking, event-driven Swift client for PostgreSQL.
 //      .package(url: "https://github.com/vapor/postgresql.git", from: "1.0.0"),
-        .package(url: "https://github.com/mixio/postgresql.git", .branch("mixio-dev")),
+        .package(url: "https://github.com/mixio/postgresql.git", .branch("mixio-dev-v0.0.1")),
     ],
     targets: [
         .target(name: "FluentPostgreSQL", dependencies: ["Async", "FluentSQL", "PostgreSQL"]),
